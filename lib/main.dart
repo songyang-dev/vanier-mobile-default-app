@@ -31,7 +31,15 @@ class SayHelloWorld extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Hello, world!', textDirection: TextDirection.ltr),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Text('Hello, world!'),
+          Text('Salut tout le monde!'),
+          Text('大家好！'),
+          Text('Hallo Welt!'),
+        ],
+      ),
     );
   }
 }
