@@ -2,12 +2,23 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const SimpleApp(),
+    const MyApp(),
   );
 }
 
-class SimpleApp extends StatelessWidget {
-  const SimpleApp({
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: Scaffold(body: SayHelloWorld()),
+    );
+  }
+}
+
+class SayHelloWorld extends StatelessWidget {
+  const SayHelloWorld({
     super.key,
   });
 
