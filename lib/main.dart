@@ -11,8 +11,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: SayHelloWorld()),
+    return MaterialApp(
+      title: "My app",
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Hello world!"),
+        ),
+        body: const SayHelloWorld(),
+      ),
     );
   }
 }
